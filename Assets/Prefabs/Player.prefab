@@ -52,10 +52,10 @@ MonoBehaviour:
   verticalInput: Vertical
   jump: Jump
   moveSpeed: 5
-  rotationSpeed: 45
+  rotationSpeed: 70
   jumpSpeed: 20
   gravity: -20
-  radius: 1
+  radius: 0.5
   score: 0
 --- !u!143 &98836337452728813
 CharacterController:

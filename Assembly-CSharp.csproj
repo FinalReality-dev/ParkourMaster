@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/ScoreTracking.cs" />
+    <Compile Include="Assets/Scripts/MovingPlatform.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>

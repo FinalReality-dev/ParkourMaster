@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if(controller.isGrounded){
             hitPlayer = false;
             moveVelocity = transform.forward * vInput * moveSpeed;
-            if(Input.GetButtonDown(jump)){
+            if(Input.GetButton(jump)){
                 moveVelocity.y = jumpSpeed;
             }
         } else {
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
                 RaycastHit hit;
                 if(Physics.SphereCast(transform.position, radius, -1 * transform.up, out hit)){
                     if(hit.collider.gameObject.GetComponent<PlayerMovement>()){
-                        Debug.Log("Jumped Player: " + hit.collider.gameObject);
+                        Debug.Log("Jumped Player: " + gameObject);
                         hitPlayer = true;
                         score += 1;
                     }
